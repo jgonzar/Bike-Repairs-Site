@@ -1,0 +1,298 @@
+/* Globals */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        position:inherit;
+    }
+    html, body{
+        font-size:62.5%;
+        font-family: 'Montserrat', sans-serif;
+        background:linear-gradient(to bottom,#FC5E55,#FA4083) no-repeat center center fixed;
+        background-size:cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    h2{
+        color:white;
+    }
+
+    p{
+        color:white;
+        font-weight:300;
+    }
+/*  */
+
+/* Header */
+    header{
+    width:768px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.39);
+    margin:0 auto;
+    padding:10px 0;
+    }
+/* Home page main*/
+    main{
+        height:100%;
+        width:768px;
+        max-width:768;
+        min-width:320px;
+        margin:0 auto;
+        background-image: url("./assets/icons/image-lion-background.png");
+        background-position: top center; 
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .nav-menu{
+        display:flex;
+        justify-content:space-between;
+
+    }
+    .right-side{
+        margin-right: 10px;
+    }
+    .right-side{
+        padding-top:35px;
+        padding-right: 10px;
+    }
+    .nav-buttons a{
+        text-decoration:none;
+        font-size:1.2rem;
+        border: 1px solid white;
+        border-radius: 3px;
+        color:white;
+        background:transparent;
+        padding:5px;
+        margin-right:10px;  
+    }
+    .nav-buttons a:hover{
+        cursor:pointer;
+        color:black;
+        background-color:white;
+        transition: ease-in-out, 400ms;
+    }
+/*  */
+
+/* Article */
+    .article-grid-container{
+        height:220px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        justify-content:space-between;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .article-right{
+        background-image: url("./assets/imgs/image-bike-repair-service-a.jpg");
+        border-radius: 0 10px 10px 0;
+    }
+
+    .article-left {
+        padding:20px;
+        border:1px solid rgba(255, 255, 255, 0.39);
+        border-right: none;
+        border-radius: 10px 0 0 10px;
+    }
+    .article-left h1{
+        font-size:2.2rem;
+        margin-bottom:10px;
+        color:white;
+    }
+    .article-left p{
+        font-size:1.2rem;
+        color:rgba(255, 255, 255, 0.603);
+    }
+    .p-m{
+        margin-bottom:30px;
+    }
+    .article-left a{
+        font-size:1.4rem;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding:5px;
+        color:white;
+    }
+    .article-left a:hover{
+        transition: ease-in-out, 400ms;
+        background:white;
+        opacity:1;
+        color:black;
+        cursor:pointer;
+    }
+
+/* Cards */
+    .cards-grid-container{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap:10px;
+        margin-top:60px;
+    }
+    .icon-on-items{
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+    .item1, .item2, .item3{
+        border-radius: 20px;
+        padding:20px 20px 30px 20px;
+    }
+    .item1{
+        background-image: url("./assets/imgs/image-background-card1-b.jpg");
+        background-repeat:no-repeat;
+    }
+    .item1 img{
+        margin-left:60px;
+    }
+    .item2{
+        background-image: url("./assets/imgs/image-background-card2-b.jpg");
+        background-repeat:no-repeat;
+    }
+    .item3{
+        background-image: url("./assets/imgs/image-background-card3-b.jpg");
+        background-repeat:no-repeat;
+    }
+    .icon{
+        display:block;
+        margin:0 auto;
+    }
+    .text-on-items{
+        text-align:center;
+        margin-top:10px;
+    }
+    .text-on-items h2{
+        font-size:2.4rem;
+        margin-bottom:10px;
+    }
+    .text-on-items p{
+        font-size:1.2rem;
+        font-weight:300;
+        color:rgba(255, 255, 255, 0.603);
+    }
+/*  */
+
+/* testimonials */
+    .testimonials-grid-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+        width:100%;
+        margin-top:60px;
+    }
+    .testimonial-container{
+        border:1px solid white;
+        border-radius:10px;
+        padding:20px;
+    }
+    .testimonial-container p{
+        font-size:1.4rem;
+    }
+/*  */
+
+/* Footer */
+    footer{
+        display:flex;
+        flex-direction:column;
+        height: auto;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        margin-top:60px;
+    }
+    .social-grid-container{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        flex-direction: row;
+        gap:20px;
+    }
+    .svg-inline--fa.fa-w-14{
+        display: inline-block;
+        height: 40px;
+        width:40px;
+        color:#FFF;
+        transition:0.4s;
+    }
+    .svg-inline--fa.fa-w-14:hover{
+        cursor:pointer;
+        color:#000;
+    }
+    footer p{
+        font-size:1.6rem;
+        color:rgba(255, 255, 255, 0.603);
+        margin-top: 20px;
+    }
+/*  */
+
+/*Contact page */ 
+/* Submit */
+
+.inputwrapper {
+    margin-bottom: 30px;
+}
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px; 
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+.margin-right-a {
+    margin-right: 20px;
+}
+input[type=radio] {
+    margin-right: 10px;
+}
+input[type="text"]{
+    border:1px solid transparent;
+    border-radius: 20px;
+}
+input[type="email"]{
+    border:1px solid transparent;
+    border-radius: 20px;
+}
+textarea[name="message"]{
+    border-radius: 10px;
+}
+form {
+    margin: 40px 0px;
+}
+.contact-section p{
+    font-size:1.4rem;
+    font-weight:300;
+    margin-bottom:20px;
+    color:white;
+}
+.contact-section label{
+    font-size:1.4rem;
+    color:white;
+}
+#select select{
+    display:flex;
+    background:transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding:5px;
+    margin-right:10px;
+    color:white;
+}
+.fire-button{
+    background:transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:5px;
+    margin-right:10px;
+    color:white;
+}
+.fire-button:hover{
+    transition: ease-in-out, 400ms;
+    background:white;
+    opacity:1;
+    color:black;
+    cursor:pointer;
+}
