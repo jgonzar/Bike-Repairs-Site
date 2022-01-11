@@ -106,12 +106,15 @@ dist
 .vscode/
 
 # Firebase files 
-.firebaserc
-.github
-database.rules.json
-firebase.json
-firestore.indexes.json
-firestore.rules
-package-lock.json
-remoteconfig.template.json
-storage.rules
+*.yml
+*.json
+
+# .firebaserc
+# .github
+# database.rules.json
+# firebase.json
+# firestore.indexes.json
+# firestore.rules
+# package-lock.json
+# remoteconfig.template.json
+# storage.rules
